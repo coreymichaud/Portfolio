@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+body {
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    /* font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; */
+    user-select: none;
+}
+
+    h1 {
+        font-size: 72px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 48px;
+        font-weight: 300;
+        padding: 20px 75px;
+    }
+
+.left-side {
+    background: white;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    color: black;
+    position: absolute;
+}
+
+.right-side {
+    background: black;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    color: white;
+    position: absolute;
+}
+
+.left-side,
+    .right-side {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.navbarL {
+    width: 50%;
+    position: absolute;
+    margin: 0px;
+    left: 15px;
+    top: 6px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    animation: fadeIn ease 2s;
+}
+
+    .navbarL a {
+        font-size: 20px;
+        padding: 10px;
+        text-decoration: none !important;
+        color: black;
+    }
+
+.navbarR {
+    width: 50%;
+    position: absolute;
+    margin: 0px;
+    right: 15px;
+    top: 6px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    animation: fadeIn ease 2s;
+}
+
+    .navbarR a {
+        font-size: 20px;
+        padding: 10px;
+        text-decoration: none !important;
+        color: white;
+    }
+
+@keyframes move-up {
+    from {margin-bottom: -115%}
+    to {margin-bottom: 0%}
+}
+
+    #up {
+        animation: move-up 1s ease;
+    }
+
+@keyframes move-down {
+    from {margin-top: -115%}
+    to {margin-top: 0%}
+}
+
+    #down {
+        animation: move-down 1s ease;
+    }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+
+
+
+
+
+/*
+
+This is for a right side menu icon
+
+a#icon p {
+    height: 2px;
+    background-color: white;
+    margin: 3px 0;
+    padding: 2px 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a#icon:hover {
+    background-color: red;
+}
+*/
